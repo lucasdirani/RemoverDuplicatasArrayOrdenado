@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>RemoverDuplicatasArrayOrdenado.App.Performance.TestePerformanceAlgoritmoDuplicataArrayOrdenado-20230418-082354</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.13.5, OS=Windows 10 (10.0.19045.2846/22H2/2022Update)
+Intel Core i7-10510U CPU 1.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK=7.0.100
+  [Host]     : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+  DefaultJob : .NET 7.0.0 (7.0.22.51805), X64 RyuJIT AVX2
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>                                          Method</th><th>Array</th><th>Mean</th><th>Error</th><th>StdDev</th><th>Rank</th><th>Gen0</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>MedirPerformanceRemoverDuplicatasUsandoEspaçoConstante</td><td>Int32[11]</td><td>18.602 ns</td><td>0.4043 ns</td><td>0.4493 ns</td><td>2</td><td>-</td><td>-</td>
+</tr><tr><td>MedirPerformanceRemoverDuplicatasUsandoEspaçoExtra</td><td>Int32[11]</td><td>34.676 ns</td><td>0.6995 ns</td><td>0.8056 ns</td><td>4</td><td>0.0172</td><td>72 B</td>
+</tr><tr><td>MedirPerformanceRemoverDuplicatasUsandoEspaçoConstante</td><td>Int32[17]</td><td>30.483 ns</td><td>0.5762 ns</td><td>0.5389 ns</td><td>3</td><td>-</td><td>-</td>
+</tr><tr><td>MedirPerformanceRemoverDuplicatasUsandoEspaçoExtra</td><td>Int32[17]</td><td>49.932 ns</td><td>0.9575 ns</td><td>0.8956 ns</td><td>5</td><td>0.0229</td><td>96 B</td>
+</tr><tr><td>MedirPerformanceRemoverDuplicatasUsandoEspaçoConstante</td><td>Int32[5]</td><td>8.442 ns</td><td>0.1128 ns</td><td>0.0942 ns</td><td>1</td><td>-</td><td>-</td>
+</tr><tr><td>MedirPerformanceRemoverDuplicatasUsandoEspaçoExtra</td><td>Int32[5]</td><td>18.404 ns</td><td>0.4056 ns</td><td>0.8007 ns</td><td>2</td><td>0.0115</td><td>48 B</td>
+</tr></tbody></table>
+</body>
+</html>
